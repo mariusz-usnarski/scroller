@@ -1,0 +1,26 @@
+.scroller_navigation {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.scroller_navigation ul {
+    list-style: none;
+}
+
+.scroller_navigation ul li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 255, 0.6);
+    cursor: pointer;
+}
+
+.scroller_navigation ul li.active {
+    background-color: blue;
+}
+
+.scroller_navigation ul li+li {
+    margin-top: 10px;
+}
